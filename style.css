@@ -4,7 +4,7 @@
     }
     header{
         padding: 32px;
-        border-bottom: 8px solid darkgreen;
+        border-bottom: 8px solid var(--subcor);
         background-color: darkred;
      }
     header div {
@@ -22,6 +22,25 @@
         color:rgb(5, 107, 24); /* mudar para a cor violeta escuro*/
         transition: color 700ms; /* e fazer uma transiçao de cor que dura 700ms*/
     }
-        
+      :root{  /* iniciando  variavel*/
+      --subcolor:rgb(238, 91, 13); /* nomeando a vriavel de --subcor e guardadno uma cor nela.*/ 
+    }  /* Fechando a o bloco da variavel root.*/
+    .links {
+      text-align: center;
+    }
+    .links a {
+      color:white;
+      font-size: 20px;
+      line-height: 30px;
+      margin: 0 16px;
+      text-decoration: none
+    }
+    .links a:hover {
+      color: var(--subcolor);
+      transition: 600ms;
+      font-size: 23px;
+    }
+    
+    
 
 
